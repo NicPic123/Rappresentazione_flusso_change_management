@@ -1,0 +1,13 @@
+Tool e Principi per il Change Management
+
+Tool:
+GitLab (repo codice + documentazione versionata + MR)
+VS Code + Zencoder (AI assistant)
+Cartella requisiti condivisa
+Wiki/KB per knowledge base
+
+Principi guida:
+AI come supporto, non sostituto → ogni deliverable AI va validato.
+Tracciabilità completa (requisito → specifica → codice → test → doc).
+Quality gate multipli: requisiti, codice, rilascio.
+Knowledge management → ogni change diventa patrimonio riusabile.

@@ -1,0 +1,38 @@
+📋 Guida alla Modifica dei File di Base
+1. 🎯 File SVG (Flusso_di_Change_Management_con_AIassistita.svg)
+Cosa contiene: Il diagramma visuale del flusso Come modificarlo:
+
+Ogni elemento cliccabile deve avere un id che corrisponde a una chiave nel file JSON
+Gli ID attuali sono: mpN8DdClBTytBIZhrkFq-2, mpN8DdClBTytBIZhrkFq-3, ecc.
+Per aggiungere un nuovo nodo:
+
+Crea l'elemento grafico nell'SVG
+Assegnagli un ID univoco (es. mpN8DdClBTytBIZhrkFq-50)
+Aggiungi i dati corrispondenti nel JSON
+2. 📊 File JSON (data/dettagli.json)
+Struttura di ogni nodo:
+
+"ID_UNIVOCO": {
+  "title": "Titolo del passaggio",
+  "attore": "Chi esegue l'attività", 
+  "output": "Cosa viene prodotto",
+  "supporto_ai": "Come l'AI aiuta (opzionale)"
+}
+Per modificare un nodo esistente:
+
+Cambia title, attore, output o supporto_ai
+Le modifiche si riflettono immediatamente nella pagina
+3. 📝 File Tool e Principi (Tool_e_principi.txt)
+Struttura attuale:
+
+Tool e Principi per il Change Management
+
+Tool:
+- Lista dei tool utilizzati
+
+Principi guida:
+- Lista dei principi seguiti
+Il sistema riconosce automaticamente:
+
+Sezioni che iniziano con "Tool:" → icona 🛠️
+Sezioni che contengono "Principi" → icona 📋

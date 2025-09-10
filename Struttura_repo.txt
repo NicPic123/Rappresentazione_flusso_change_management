@@ -1,0 +1,50 @@
+/contesto
+      /docs
+         /architettura
+              documento_architetturale.pdf
+              interfacce_sistemi.md
+         /funzionale
+              analisi_funzionale.md
+              regole_business.md
+         /tecnica
+              analisi_tecnica.md
+              linee_guida_sviluppo.md
+         /storico
+              changelog.md
+              backlog.md
+			  
+      /db
+            metadati.md          # Contiene l’elenco di tutte le tabelle, con descrizione sintetica (anche una riga).
+            /db_dump
+                  incassi.sql
+                  kiwi.sql
+                  affi.sql
+				  ..
+         /dati_esempio           # Piccoli dataset CSV facendo attenzione ai dati coperti da privacy
+              clienti.csv
+              fatt.csv
+              storni.csv
+              ... (solo le tabelle che reputiamo più importanti)
+
+      /orchestrazione
+         job_controlm
+         crontab
+         .. altre schedulazioni 
+
+      /change
+            /requisiti
+                  /brd1
+                        requisiti_brd1.pdf
+                        specifiche_funzionali.md
+                        specifiche_tecniche.md
+                        testcase.md
+                        piano_ri_rilascio_rollback.md
+                        documento_finale_tecnico_funzionale.md
+                        /file_di_appoggio_per_sviluppo
+                  /brd2
+                        requisiti_brd2.pdf
+                        specifiche_funzionali.md
+                        specifiche_tecniche.md
+                        testcase.md
+                        piano_ri_rilascio_rollback.md
+                        documento_finale_tecnico_funzionale.md

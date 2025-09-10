@@ -1,0 +1,64 @@
+1. Definizione del requisito
+Attore: Clienteeeeeeeeeeeeeee
+Output: Documento requisiti iniziale (depositato nella cartella requisiti).
+2. Raccolta e validazione preliminare dei requisiti
+Attore: Analista
+Supporto AI: Sintesi dei requisiti e confronto con casi simili già presenti in knowledge base.
+Output: Requisiti consolidati.
+3. Generazione automatica specifiche funzionali preliminari
+Attore: Analista con AI (Zencoder su repo/documenti)
+Output: Specifiche funzionali v1 (da validare).
+4. Generazione automatica specifiche tecniche preliminari
+Attori: Analista + Sviluppatore con AI
+Supporto AI: Identificazione oggetti DB, procedure PL/SQL, tabelle, viste impattate.
+Output: Specifiche tecniche v1 (da validare).
+5. Q&A con cliente per chiarimenti
+Attore: Analista
+Supporto AI: Suggerisce dubbi/incongruenze da sottoporre al cliente.
+Output: Documento chiarimenti.
+6. Pianificazione delle attività
+Attore: PM
+Supporto AI: Generazione Gantt, identificazione dipendenze, stima effort.
+Output: Piano di progetto.
+7. Quality Gate di specifiche
+Attori: Analista, Sviluppatore
+Output: Specifiche funzionali e tecniche approvate (branch Git dedicato).
+8. Sviluppo in ambiente DEV
+Attore: Sviluppatore con AI (Zencoder in VS Code)
+Supporto AI: Generazione/ottimizzazione codice PL/SQL, suggerimenti best practice.
+Output: Codice versionato in GitLab.
+9. Static code analysis & AI review
+Attori: Sviluppatore, AI
+Supporto AI: Linting PL/SQL, verifica sicurezza e performance.
+Output: Report qualità del codice.
+10. Test in ambiente DEV
+Attori: Sviluppatore, Analista
+Supporto AI: Generazione casi di test, expected result, script di test automatizzati.
+Output: Verbale test in DEV.
+11. User Acceptance Test (UAT)
+Attore: Cliente + Analista
+Supporto AI: Sintesi verbali, evidenziazione difetti ricorrenti.
+Output: Verbale UAT con esito.
+12. Revisione CAB / Validazione finale
+Attori: PM, Analista, Sviluppatore (Change Advisory Board semplificato)
+Supporto AI: Confronta requisiti iniziali con specifiche implementate, verifica copertura test.
+Output: Go/No-Go al rilascio.
+13. Piano di rilascio e rollback
+Attore: Sviluppatore con AI
+Output: Script di deploy, piano rollback, checklist rilascio.
+14. Rilascio in produzione
+Attori: Sviluppatore, PM
+Supporto AI: Monitoraggio log in tempo reale, alert automatici.
+Output: Verbale rilascio.
+15. Post-implementation review
+Attori: Analista, PM
+Supporto AI: Analisi log e performance DB, sintesi incident post-rilascio.
+Output: Report post-release.
+16. Documentazione finale tecnico-funzionale
+Attori: Analista, Sviluppatore con AI
+Supporto AI: Draft automatico, cross-reference requisiti ↔ specifiche ↔ codice ↔ test.
+Output: Documento tecnico-funzionale archiviato in knowledge base.
+17. Aggiornamento knowledge base
+Attore: Analista
+Supporto AI: Indicizzazione documenti, collegamento con casi simili passati.
+Output: Repository aggiornato per riuso futuro.

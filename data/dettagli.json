@@ -1,0 +1,98 @@
+{
+  "mpN8DdClBTytBIZhrkFq-2": {
+    "title": "1. Definizione del requisito",
+    "attore": "Cliente",
+    "output": "Documento requisiti iniziale (depositato nella cartella requisiti).",
+    "supporto_ai": ""
+  },
+  "mpN8DdClBTytBIZhrkFq-3": {
+    "title": "2. Raccolta e validazione preliminare dei requisiti",
+    "attore": "Analista",
+    "output": 	"1) Requisito preliminare validato: versione “pulita” della richiesta iniziale, con terminologia coerente e gap colmati. Mappa degli impatti: aree del sistema (moduli, API, DB, processi) potenzialmente coinvolte.\n2) Segnalazione di conflitti o duplicati: individuazione di requisiti simili, già implementati o in conflitto.\n3) Priorità iniziale (bozza): indicazione preliminare di importanza/urgenza, eventualmente suggerita dall’AI.\n4) Lista di domande aperte / chiarimenti richiesti: punti che richiedono ulteriore validazione con il business.",
+    "supporto_ai": "Sintesi dei requisiti normalizzati, contesto tecnico, analisi di impatto, conflitti e domande aperte."
+  },
+  "mpN8DdClBTytBIZhrkFq-4": {
+    "title": "3. Generazione automatica specifiche funzionali preliminari",
+    "attore": "Analista",
+    "output": "Specifiche funzionali (da validare).",
+    "supporto_ai": "Strutturare la bozza della specifica funzionale e supporto alla validazione"
+  },
+  "mpN8DdClBTytBIZhrkFq-5": {
+    "title": "4. Generazione automatica specifiche tecniche preliminari",
+    "attore": "Analista + Sviluppatore",
+    "output": "Specifiche tecniche (da validare).",
+    "supporto_ai": "Traduzione funzionale → tecnica. \nIdentificazione oggetti DB, procedure PL/SQL, tabelle, viste impattate."
+  },
+  "mpN8DdClBTytBIZhrkFq-6": {
+    "title": "5. Q&A con cliente per chiarimenti",
+    "attore": "Analista",
+    "output": "1) Lista di domande aperte formulate in linguaggio chiaro e business-friendly.\n2) Risposte del cliente raccolte e tracciate.\n3) Documento di chiarimenti consolidato, che collega: requisito ↔ domanda ↔ risposta ↔ impatto sul sistema.\n4) Aggiornamento delle specifiche preliminari (funzionali/tecniche) sulla base delle risposte.",
+    "supporto_ai": "Preparazione delle domande, Consolidamento Q&A, Tracciabilità, Accelerazione del processo"
+  },
+  "mpN8DdClBTytBIZhrkFq-7": {
+    "title": "6. Pianificazione delle attività",
+    "attore": "PM",
+    "output": "1) WBS (Work Breakdown Structure) preliminare con attività dettagliate.\n2) Stima effort preliminare (giorni/uomo o story points) basata su confronti con casi precedenti.\n3) Mappa delle dipendenze (tra task e tra moduli).\n4) Timeline di massima con milestone principali.\n5) Identificazione rischi e colli di bottiglia.\n6) Registro delle risorse coinvolte (ruoli, non necessariamente nomi).",
+    "supporto_ai": "Generazione Gantt, identificazione dipendenze, stima effort."
+  },
+  "mpN8DdClBTytBIZhrkFq-10": {
+    "title": "7. Sviluppo in ambiente DEV",
+    "attore": "Sviluppatore",
+    "output": "1) Codice sviluppato in ambiente DEV.\n2) Descrizione delle soluzioni implementate per documentarle.\n3) Unit test.",
+    "supporto_ai": "Generazione/ottimizzazione codice PL/SQL, suggerimenti best practice, documentazione automatica"
+  },
+  "mpN8DdClBTytBIZhrkFq-11": {
+    "title": "8. Static code analysis & AI review",
+    "attore": "Sviluppatore",
+    "output": "1) Report di analisi statica con: \n\t- Violazioni di regole di coding standard\n\t- Vulnerabilità di sicurezza\n\t- Code smell e duplicazioni\n\t- Complessità ciclomatica e performance issues.\n2) AI Review Report con:\n\t- Suggerimenti di refactoring\n\t- Allineamento con specifiche funzionali/tecniche (tracciabilità)\n\t- Segnalazione di incoerenze rispetto al design architetturale",
+    "supporto_ai": "Linting PL/SQL, verifica sicurezza e performance."
+  },
+  "mpN8DdClBTytBIZhrkFq-12": {
+    "title": "9. Test in ambiente DEV",
+    "attore": "Sviluppatore, Analista",
+    "output": "1) Suite di test:\n\t- Integration\n\t- System\n\t- Security\n\t- No-regression.\n2) Report dei test.\n3) Check di copertura requisiti → test mapping",
+    "supporto_ai": "Generazione casi di test, expected result, script di test automatizzati."
+  },
+  "mpN8DdClBTytBIZhrkFq-15": {
+    "title": "10. User Acceptance Test (UAT)",
+    "attore": "Cliente + Analista",
+    "output": "1) Suite di test UAT con relativi testcase mappati con il relativo requisito\n2) Decisione finale sul rilascio",
+    "supporto_ai": "Generazione casi di test UAT, Analisi automatica dei risultati"
+  },
+  "mpN8DdClBTytBIZhrkFq-16": {
+    "title": "11a. Quality Gate - UAT approvato?",
+    "attore": "Cliente, Analista",
+    "output": "Decisione basata sui risultati dei test UAT. Se l'UAT non è approvato, si raccoglie il feedback e si ritorna alle fasi precedenti per le correzioni necessarie.",
+    "supporto_ai": "Analisi del feedback UAT e suggerimenti per le azioni correttive."
+  },
+  "mpN8DdClBTytBIZhrkFq-18": {
+    "title": "11. Revisione CAB / Validazione finale",
+    "attore": "PM, Analista, Sviluppatore (Change Advisory Board semplificato)",
+    "output": "Go/No-Go al rilascio.",
+    "supporto_ai": "Consolidamento documentazione e report"
+  },
+  "mpN8DdClBTytBIZhrkFq-20": {
+    "title": "13. Rilascio in produzione",
+    "attore": "Sviluppatore, PM",
+    "output": "Rilascio completato in produzione e verbale",
+    "supporto_ai": "Check pre-rilascio e post-rilascio"
+  },
+  "mpN8DdClBTytBIZhrkFq-46": {
+    "title": "14. Post-implementation review",
+    "attore": "Analista",
+    "output": "Report di post-implementation review",
+    "supporto_ai": "Analisi copertura requisiti e qualità rilascio"
+  },
+  "mpN8DdClBTytBIZhrkFq-47": {
+    "title": "15. Documentazione finale tecnico-funzionale",
+    "attore": "Analista, Sviluppatore",
+    "output": "1) Documento finale tecnico-funzionale completo e approvato, contenente:\n\t- Sintesi dei requisiti e loro tracciabilità verso specifiche\n\t- Codice e test\n\t-  Architettura tecnica e diagrammi aggiornati\n\t- Dettagli implementativi delle soluzioni sviluppate\n\t- Risultati dei test post-rilascio (DEV, UAT, smoke, no-regression)\n\t- Riepilogo bug e incidenti risolti\n\t- Procedura di rilascio e rollback consolidata\n\t- Raccomandazioni per manutenzione e miglioramento continuo",
+    "supporto_ai": "Generazione automatica di sezioni documentali"
+  },
+  "mpN8DdClBTytBIZhrkFq-49": {
+    "title": "16. Aggiornamento knowledge base",
+    "attore": "Sviluppatore",
+    "output": "Knowledge base aggiornata e coerente",
+    "supporto_ai": "Indicizzazione documenti, generazione automatica di articoli e schede tecniche."
+  }
+}

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flusso di Change Management con AI assistita</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="header">
+        <h1>Flusso di Change Management con AI assistita</h1>
+        <p>Diagramma interattivo - Clicca su ogni nodo per visualizzare i dettagli</p>
+    </header>
+
+    <main class="main-content">
+        <section class="diagram-section">
+            <div id="svg-container" class="svg-container">
+                <!-- L'SVG verrà caricato dinamicamente qui -->
+            </div>
+        </section>
+
+        <aside class="sidebar">
+            <div class="tools-section">
+                <h2>Tool e Principi</h2>
+                <div id="tools-content" class="tools-content">
+                    <!-- Contenuto caricato dinamicamente dal file Tool_e_principi.txt -->
+                    <div class="loading-tools">
+                        <p>Caricamento tool e principi...</p>
+                    </div>
+                </div>
+            </div>
+        </aside>
+    </main>
+
+    <!-- Modale per i dettagli -->
+    <div id="detail-modal" class="modal hidden">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2 id="modal-title"></h2>
+                <button class="close-btn" id="close-modal">&times;</button>
+            </div>
+            <div class="modal-body">
+                <div class="detail-item">
+                    <strong>Attore:</strong>
+                    <span id="modal-attore"></span>
+                </div>
+                <div class="detail-item">
+                    <strong>Output:</strong>
+                    <span id="modal-output"></span>
+                </div>
+                <div class="detail-item" id="supporto-ai-section">
+                    <strong>Supporto AI:</strong>
+                    <span id="modal-supporto-ai"></span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Loading overlay -->
+    <div id="loading" class="loading hidden">
+        <div class="spinner"></div>
+        <p>Caricamento diagramma...</p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
